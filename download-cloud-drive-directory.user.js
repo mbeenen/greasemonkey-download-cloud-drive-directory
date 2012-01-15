@@ -10,7 +10,7 @@ if(unsafeWindow.console){
 }
 
 GM_log('script loaded');
-var delayFactor = 400;
+var delayFactor = 100;
 
 function mouseEvent(parent, type) {
   var evt = parent.ownerDocument.createEvent('MouseEvents');
@@ -66,7 +66,7 @@ $(document).ready(function () {
       setTimeout(function() {
         GM_log('count in inner function is' + count);
         downloadItem(button, count);
-      }, delayFactor * 10 * i);
+      }, delayFactor * 10 * (i-1));
     });
     // for (i = 0; i < total_file_count; i++) {
     //   var box = $('.amazon_mp3_file').get(i);
