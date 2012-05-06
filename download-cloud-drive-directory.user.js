@@ -6,7 +6,7 @@
 // ==/UserScript
 
 if(unsafeWindow.console){
-  var GM_log = unsafeWindow.console.log;
+    var GM_log = unsafeWindow.console.log;
 }
 
 var delayFactor = 100;
